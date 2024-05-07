@@ -1,0 +1,44 @@
+{
+  "plugins": ["simple-import-sort", "prettier"],
+  "extends": ["react-app","prettier"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "simple-import-sort/imports": ["error", {
+      "groups": [[
+        "next",
+        "react",
+        "^@?\\w",
+        "pages",
+        "layouts",
+        "hoc",
+        "routers",
+        "components",
+        "hooks",
+        "helpers",
+        "utils",
+        "constants",
+        "store",
+        "services",
+        "urls",
+        "lib",
+        "types",
+        "assets",
+        "^./",
+        "^../../",
+        "^.+\\.s?css$"
+      ]]
+    }],
+    "prettier/prettier": ["error", {
+      "printWidth":  120,
+      "semi":  true,
+      "jsxSingleQuote":  true,
+      "singleQuote": true,
+      "useTabs":  true,
+      "arrowParens":  "avoid"
+    }]
+  }
+}
