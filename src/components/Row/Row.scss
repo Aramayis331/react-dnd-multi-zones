@@ -1,0 +1,18 @@
+.row {
+  border: 2px solid #09be00;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  min-height: 74px;
+
+  &_hide_border {
+    border: 2px solid transparent;
+  }
+
+  &_dragging {
+    opacity: 0;
+  }
+
+  &_content {
+    padding: 12px;
+  }
+}

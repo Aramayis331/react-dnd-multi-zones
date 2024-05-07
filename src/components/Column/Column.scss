@@ -1,0 +1,47 @@
+.column {
+  border: 2px solid #09be00;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  min-height: 74px;
+
+  &_dragging {
+    opacity: 0;
+  }
+
+  &_content {
+    padding: 12px;
+
+    &_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &_info {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        &_rows_length {
+          width: 24px;
+          height: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 4px;
+          margin-left: 12px;
+          color: white;
+          background: green;
+        }
+      }
+
+      &_icons {
+        cursor: pointer;
+
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+}

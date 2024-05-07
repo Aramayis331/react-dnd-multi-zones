@@ -1,0 +1,26 @@
+.drop_zone {
+  position: relative;
+  min-height: 74px;
+
+  &_active_title {
+    display: none;
+  }
+}
+
+.drop_zone.drop_zone_active {
+  background: #005b1a;
+  border-radius: 6px;
+
+  .drop_zone_active_title {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .row_content, .column_content {
+    opacity: 0;
+  }
+}

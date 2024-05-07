@@ -1,0 +1,12 @@
+.preview_dragging, .preview_dragging_row {
+  opacity: 0.6;
+  z-index: 500;
+}
+
+.preview_dragging {
+  width: calc(100% - 16px);
+}
+
+.preview_dragging_row {
+  width: calc(100% - 40px);
+}
